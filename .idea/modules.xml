@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Annotations/Annotations.iml" filepath="$PROJECT_DIR$/Annotations/Annotations.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Auto/Auto.iml" filepath="$PROJECT_DIR$/Auto/Auto.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Demo/DemoJunit.iml" filepath="$PROJECT_DIR$/Demo/DemoJunit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DynamicArray/DynamicArray.iml" filepath="$PROJECT_DIR$/DynamicArray/DynamicArray.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Fun/Fun.iml" filepath="$PROJECT_DIR$/Fun/Fun.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Importing/Importing.iml" filepath="$PROJECT_DIR$/Importing/Importing.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JSPDevelopment/JSPDevelopment.iml" filepath="$PROJECT_DIR$/JSPDevelopment/JSPDevelopment.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Logging/Logging.iml" filepath="$PROJECT_DIR$/Logging/Logging.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Payroll/Payroll.iml" filepath="$PROJECT_DIR$/Payroll/Payroll.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TableData/TableData.iml" filepath="$PROJECT_DIR$/TableData/TableData.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TriveraFarm/TriveraFarm.iml" filepath="$PROJECT_DIR$/TriveraFarm/TriveraFarm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Tutorial/Tutorial.iml" filepath="$PROJECT_DIR$/Tutorial/Tutorial.iml" />
+      <module fileurl="file://$PROJECT_DIR$/VirtualJavaTeacher/VirtualJavaTeacher.iml" filepath="$PROJECT_DIR$/VirtualJavaTeacher/VirtualJavaTeacher.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Web/Web.iml" filepath="$PROJECT_DIR$/Web/Web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WebShop/WebShop.iml" filepath="$PROJECT_DIR$/WebShop/WebShop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/adobe/adobe.iml" filepath="$PROJECT_DIR$/adobe/adobe.iml" />
+      <module fileurl="file://$PROJECT_DIR$/programming/programming.iml" filepath="$PROJECT_DIR$/programming/programming.iml" />
+    </modules>
+  </component>
+</project>

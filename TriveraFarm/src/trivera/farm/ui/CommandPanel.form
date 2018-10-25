@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="trivera.farm.ui.CommandPanel">
+  <grid id="27dc6" binding="commandPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="907" height="400"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <grid id="b6990" binding="buttons" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+        <constraints border-constraint="Center"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="2b8c6" class="javax.swing.JButton" binding="sleepButton" default-binding="true">
+            <constraints/>
+            <properties>
+              <text value="Sleep"/>
+            </properties>
+          </component>
+          <component id="6d568" class="javax.swing.JButton" binding="wakeButton" default-binding="true">
+            <constraints/>
+            <properties>
+              <text value="Wake"/>
+            </properties>
+          </component>
+          <component id="47c5e" class="javax.swing.JButton" binding="eatButton" default-binding="true">
+            <constraints/>
+            <properties>
+              <text value="Eat"/>
+            </properties>
+          </component>
+          <component id="12d1" class="javax.swing.JButton" binding="performButton" default-binding="true">
+            <constraints/>
+            <properties>
+              <text value="Perform"/>
+            </properties>
+          </component>
+          <component id="c2c32" class="javax.swing.JButton" binding="rewardButton" default-binding="true">
+            <constraints/>
+            <properties>
+              <text value="Reward"/>
+            </properties>
+          </component>
+          <component id="9f79a" class="javax.swing.JButton" binding="plus15Button">
+            <constraints/>
+            <properties>
+              <enabled value="true"/>
+              <text value="+15"/>
+            </properties>
+          </component>
+          <component id="c3ca7" class="javax.swing.JButton" binding="plus30Button">
+            <constraints/>
+            <properties>
+              <text value="+30"/>
+            </properties>
+          </component>
+          <component id="10f3a" class="javax.swing.JButton" binding="plus60Button">
+            <constraints/>
+            <properties>
+              <text value="+60"/>
+            </properties>
+          </component>
+          <component id="5b988" class="javax.swing.JButton" binding="exitButton" default-binding="true">
+            <constraints/>
+            <properties>
+              <text value="Exit"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>
