@@ -17,6 +17,15 @@ public class Application {
         t3.showYourTeamFingerprints();
         t4.showYourTeamFingerprints();
 
+
+
+
+
+
+
+
+
+
         home.setTeamName(home.getTeamName().toUpperCase());
 
         t1.showYourTeamFingerprints();

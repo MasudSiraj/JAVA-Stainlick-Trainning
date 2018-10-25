@@ -3,7 +3,7 @@ package nfl;
 public class Ticket {
 
     private static Team homeTeam;
-    private static Team visitingTeam = null;
+    private static Team visitingTeam;
 
     Ticket(Team homeTeam,Team visitingTeam){
        Ticket.homeTeam=homeTeam;

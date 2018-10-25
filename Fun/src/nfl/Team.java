@@ -6,7 +6,7 @@ public class Team {
     private String mascot;
 
     public Team(String teamName) {
-        this.teamName=teamName;
+        Team.teamName=teamName;
     }
 
     public static String getTeamName(){
