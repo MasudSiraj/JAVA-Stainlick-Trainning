@@ -15,10 +15,12 @@ public class ColorPicker extends JButton{
    **/
   public ColorPicker() {
     setText("Show ColorPicker");
-    addActionListener((e) ->{
-      setBackground(JColorChooser.showDialog(((Component)e.getSource()).getParent(),
-                                                 "Color Selector", Color.blue));
-    });
+    addActionListener((e) -> changeColor(e));
+  }
+
+  private void changeColor(ActionEvent e) {
+    setBackground(JColorChooser.showDialog(((Component)e.getSource()).getParent(),
+                                               "Color Selector", Color.blue));
   }
 
   /**

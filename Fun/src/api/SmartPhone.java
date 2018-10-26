@@ -2,7 +2,7 @@ package api;
 
 import java.time.LocalTime;
 
-public class SmartPhone implements Calculator, Timepiece{
+public class SmartPhone extends Device implements Calculator, Timepiece{
 
     // Calculator aspect
     @Override

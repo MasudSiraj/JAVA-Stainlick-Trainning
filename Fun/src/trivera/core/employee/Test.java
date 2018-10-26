@@ -21,23 +21,18 @@ public class Test {
 
     public static void main(String[] args) {
         Person pers = null;
-        Employee emp, emp2 = null;
+        Employee emp = null;
 
         // Instantiate a person and an employee, using the two variables
         // supplied
         pers = new Person("Jennifer");
         emp = new Employee("Bob", 10);
 
-        emp2 = new Employee("bob", 10);
-
-        System.out.println("Person   : " + pers.toString());
+        System.out.println("Person   : " + pers);
         System.out.println("Employee : " + emp);
 
-
-        System.out.println("emp.equals(emp2) " + emp.equals(emp2));
-        System.out.println("emp==emp2 " + (emp==emp2));
-
-
+        // verify the version of Java that is running
+        System.out.println(System.getProperty("java.version"));
     }
 
 }
