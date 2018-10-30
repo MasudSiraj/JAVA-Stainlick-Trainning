@@ -2,12 +2,13 @@ package trivera.storage;
 
 import org.junit.Test;
 
+import java.util.Collection;
+
 import static org.junit.Assert.*;
 
 public class StringArrayTest {
 
     StringArray stringArray = new StringArray();
-
 
     @Test
     public void capacity() {

@@ -1,8 +1,12 @@
 package airline;
 
+import api.SKU;
+
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Arrays;
+import java.util.Collection;
+import java.util.Map;
 
 public class Application {
 
@@ -10,8 +14,8 @@ public class Application {
 
         Jet a787 = new Jet();
 
-        System.out.println( Arrays.toString(Compass.values()) );
 
+        System.out.println( Arrays.toString(Compass.values()) );
 
 
         try {
@@ -22,10 +26,6 @@ public class Application {
         } finally{
             System.out.println("Thanks for flying budget airlines");
         }
-
-
-
-
     }
 
 }
