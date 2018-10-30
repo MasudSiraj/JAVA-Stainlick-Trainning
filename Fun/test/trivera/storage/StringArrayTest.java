@@ -8,12 +8,7 @@ import static org.junit.Assert.*;
 
 public class StringArrayTest {
 
-    Collection stringArray;
-
-    public Collection<Employee> getEmployees(Collection<SqlCriteria> criteria){
-        return null;
-    }
-
+    StringArray stringArray = new StringArray();
 
     @Test
     public void capacity() {
