@@ -26,6 +26,8 @@ public class Store {
         lanes.put("Lane 3",new Thread(() -> processCheckout(), "Lane 3"));
     }
 
+    @Cacheable
+    @Loggable
     private void processCheckout() {
         String threadName = Thread.currentThread().getName();
         while(true){

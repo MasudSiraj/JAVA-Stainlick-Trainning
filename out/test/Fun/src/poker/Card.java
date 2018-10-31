@@ -4,6 +4,7 @@ import java.util.Objects;
 
 public class Card extends Object{
 
+
     private final Suit suit;
     private final Rank rank;
 
