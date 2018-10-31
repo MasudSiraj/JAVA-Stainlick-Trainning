@@ -1,5 +1,7 @@
 package poker;
 
+import java.util.Collections;
+
 public class Statistics {
 
 
@@ -8,30 +10,36 @@ public class Statistics {
 
     public static void main(String[] args) {
 
-        Card aceOfSpades = new Card(Suit.Spade,Rank.Ace );
-        new Card(Suit.Spade,Rank.Ace );
+//        Card aceOfSpades = new Card(Suit.Spade,Rank.Ace );
+//        new Card(Suit.Spade,Rank.Ace );
+//
+//        PokerMachine pokerMachine = new PokerMachine();
+//
+//        int cardsPulledToScore = cardsPulledBeforeMatch(aceOfSpades, pokerMachine);
+//
+//        System.out.println(cardsPulledToScore + " cards pulled to get the " + aceOfSpades);
 
-        PokerMachine pokerMachine = new PokerMachine();
-
-        int cardsPulledToScore = cardsPulledBeforeMatch(aceOfSpades, pokerMachine);
-
-        System.out.println(cardsPulledToScore + " cards pulled to get the " + aceOfSpades);
+        //trySorting();
+        tryLambda();
 
     }
 
+    private static void trySorting() {
 
+        Deck deck = new Deck();
+        Collections.sort(deck);
+        for (Card c : deck) {
+            System.out.println(c);
+        }
+    }
 
+    private static void tryLambda() {
+        Deck deck = new Deck();
 
-
-
-
-
-
-
-
-
-
-
+        deck.stream()
+                .filter(card -> card.getRank()==Rank.Ace )
+                .forEach(System.out::println);
+    }
 
     private static int cardsPulledBeforeMatch(Card card, PokerMachine pokerMachine) {
         int cardsPulledToScore=0;

@@ -2,7 +2,7 @@ package poker;
 
 import java.util.Objects;
 
-public class Card extends Object{
+public class Card implements Comparable<Card>{
 
 
     private final Suit suit;
@@ -30,5 +30,18 @@ public class Card extends Object{
     @Override
     public String toString() {
         return rank + " of " + suit;
+    }
+
+    @Override
+    public int compareTo(Card o) {
+        return 0;
+    }
+
+    public Suit getSuit() {
+        return suit;
+    }
+
+    public Rank getRank() {
+        return rank;
     }
 }

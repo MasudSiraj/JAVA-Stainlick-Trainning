@@ -6,6 +6,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.Collection;
+import java.util.Hashtable;
 import java.util.Map;
 
 public class Application {
@@ -13,6 +14,8 @@ public class Application {
     public static void main(String[] args) {
 
         Jet a787 = new Jet();
+
+        Map<String, Collection<Jet>> fleet = new Hashtable<>();
 
 
         System.out.println( Arrays.toString(Compass.values()) );

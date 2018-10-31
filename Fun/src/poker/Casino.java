@@ -9,6 +9,12 @@ public class Casino {
     Casino(){
         play();
         playHand();
+        playRanks();
+    }
+
+    private void playRanks() {
+        Rank rank = Rank.valueOf("Four");
+        System.out.println(rank);
     }
 
     private void play() {
