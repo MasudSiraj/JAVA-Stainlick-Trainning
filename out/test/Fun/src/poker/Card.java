@@ -34,7 +34,7 @@ public class Card implements Comparable<Card>{
 
     @Override
     public int compareTo(Card o) {
-        return 0;
+        return -Integer.compare(     getRank().ordinal(), o.getRank().ordinal()          );
     }
 
     public Suit getSuit() {

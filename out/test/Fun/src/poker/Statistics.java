@@ -19,15 +19,41 @@ public class Statistics {
 //
 //        System.out.println(cardsPulledToScore + " cards pulled to get the " + aceOfSpades);
 
-        //trySorting();
-        tryLambda();
+        trySortingNatural();
+        // trySortingBySuit();
+        //tryLambda();
 
     }
 
-    private static void trySorting() {
-
+    private static void trySortingNatural() {
         Deck deck = new Deck();
         Collections.sort(deck);
+        for (Card c : deck) {
+            System.out.println(c);
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    private static void trySortingBySuit() {
+
+        Deck deck = new Deck();
+        Collections.sort(deck, new SortBySuit());
         for (Card c : deck) {
             System.out.println(c);
         }

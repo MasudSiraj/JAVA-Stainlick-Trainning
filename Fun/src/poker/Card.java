@@ -33,8 +33,11 @@ public class Card implements Comparable<Card>{
     }
 
     @Override
-    public int compareTo(Card o) {
-        return 0;
+    public int compareTo(Card other) {
+
+        int me = getSuit().ordinal()+getRank().ordinal();
+        int otherInt = other.getSuit().ordinal()+other.getRank().ordinal();
+        return -Integer.compare(     me, otherInt     );
     }
 
     public Suit getSuit() {
