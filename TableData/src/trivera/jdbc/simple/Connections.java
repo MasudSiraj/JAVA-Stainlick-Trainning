@@ -6,11 +6,15 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Properties;
 
-public abstract class Connections {
+public class Connections {
 
-    private static Properties properties;
+    private Properties properties;
 
-    public static Connection getConnection() throws SQLException {
+    Connections(Properties properties){
+        this.properties=properties;
+    }
+
+    public Connection getConnection() throws SQLException {
         String url = properties.getProperty("url");
         String username = properties.getProperty("username");
         String password= properties.getProperty("password");
@@ -18,7 +22,7 @@ public abstract class Connections {
 
     }
 
-    public static Collection<Employee> runSql(String sql) throws SQLException{
+    public Collection<Employee> runSql(String sql) throws SQLException{
         PreparedStatement statement = getConnection().prepareStatement(sql);
         ResultSet rs = statement.executeQuery();
 
@@ -37,7 +41,7 @@ public abstract class Connections {
     }
 
 
-    public static void save(Employee employee) throws SQLException{
+    public void save(Employee employee) throws SQLException{
         String insertSQL = "INSERT INTO employee (EMPID, FIRSTNAME, LASTNAME, SALARY) VALUES(?,?,?,?)";
         PreparedStatement statement = getConnection().prepareStatement(insertSQL);
         statement.setInt(       1, employee.getId() );
@@ -50,9 +54,6 @@ public abstract class Connections {
         System.out.println(rowsModified + " were added");
     }
 
-    public static void setConfiguration(Properties properties) {
-        Connections.properties = properties;
-    }
 
 
 }

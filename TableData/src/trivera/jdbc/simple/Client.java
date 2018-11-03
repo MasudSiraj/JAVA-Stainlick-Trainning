@@ -3,7 +3,7 @@ package trivera.jdbc.simple;
 import java.util.Collection;
 import java.util.Properties;
 
-import static trivera.jdbc.simple.Connections.runSql;
+
 
 public class Client {
 
@@ -14,13 +14,14 @@ public class Client {
         properties.setProperty("username", "sa");
         properties.setProperty("password", "password");
 
-        Connections.setConfiguration(properties);
+        Connections connections = new Connections(properties);
 
-        Collection<Employee> employees = Connections.runSql("select * from employee");
+
+        Collection<Employee> employees = connections.runSql("select * from employee");
         printList(employees);
 
         Employee employee = new Employee(42, "Scott", "Stanlick", 250_000);
-        Connections.save(employee);
+        connections.save(employee);
     }
 
     private static void printList(Collection<Employee> employees) {
