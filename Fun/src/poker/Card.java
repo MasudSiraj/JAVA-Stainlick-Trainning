@@ -7,11 +7,25 @@ public class Card implements Comparable<Card>{
 
     private final Suit suit;
     private final Rank rank;
+    private boolean faceUp = false;
+    private int timesFlipped;
 
     public Card(Suit suit, Rank rank) {
         this.suit=suit;
         this.rank=rank;
     }
+
+
+    public void flip(){
+        faceUp = !faceUp;
+        timesFlipped++;
+    }
+
+    boolean areYouFaceUp(){
+        return faceUp;
+    }
+
+
 
     @Override
     public boolean equals(Object o) {
@@ -29,7 +43,12 @@ public class Card implements Comparable<Card>{
 
     @Override
     public String toString() {
-        return rank + " of " + suit;
+
+        String side = faceUp ? "up" : "down";
+
+
+        return rank + " of " + suit +
+                " and I am face " + side + " and have been flipped " + timesFlipped + " times";
     }
 
     @Override

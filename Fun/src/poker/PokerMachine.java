@@ -18,7 +18,7 @@ public class PokerMachine {
         for(  int i=0; i<howManyCards; i++){
             handOfCards[i]= getTopCard();
         }
-        return handOfCards; 
+        return handOfCards;
     }
 
 
