@@ -3,22 +3,24 @@ package com.triveratech.junit.groceries;
 public class Driver {
 
     public static void main(String[] args) {
-        SodaSixPack ssp = new SodaSixPack();
-        ssp.setQuantity(4);
+//        SodaSixPack sixPack = new SodaSixPack();
+//
+//        sixPack.setQuantity(1);
+//        printReceipt(sixPack);
+//
+//        sixPack.setQuantity(4);
+//        printReceipt(sixPack);
+//
+//        sixPack.setQuantity(5);
+//        printReceipt(sixPack);
+//
+//        sixPack.setQuantity(10);
+//        printReceipt(sixPack);
+    }
+
+    private static void printReceipt(SodaSixPack ssp) {
         System.out.printf(
                 "Quantity %d, Price %d, Deposit %d%n",
-                ssp.getQuantity(),ssp.getPrice(),ssp.getDeposit());
-
-
-        ssp.setQuantity(5);
-        System.out.printf(
-                "Quantity %d, Price %d, Deposit %d%n",
-                ssp.getQuantity(),ssp.getPrice(),ssp.getDeposit());
-
-
-        ssp.setQuantity(10);
-        System.out.printf(
-                "Quantity %d, Price %d, Deposit %d%n",
-                ssp.getQuantity(),ssp.getPrice(),ssp.getDeposit());
-}
+                ssp.getQuantity(), ssp.getPrice(), ssp.getDeposit());
+    }
 }

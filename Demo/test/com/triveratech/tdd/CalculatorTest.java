@@ -7,29 +7,23 @@ import static org.junit.Assert.*;
 
 public class CalculatorTest {
 
-    private Calculator calculator;
+    private Calculator calculator = null;
 
     @Before
-    public void setUp() throws Exception {
-        this.calculator = new Calculator();
+    public void beforeEachTestScenario(){
+        calculator = new Calculator();
     }
 
     @Test
-    public void testAdd(){
+    public void scenarioToTestAdditionFunctionality(){
         int expected = 1;
         int actual = calculator.add(1,0);
         assertEquals(expected, actual);
     }
 
-
-    @Test
-    public void testAddBig(){
-        try {
-            this.calculator.add(Integer.MAX_VALUE, 1);
-            fail("Calculator.add() failed to throw an exception.");
-        } catch (RuntimeException e) {
-            // the call threw an exception, so the test passed.
-        }
+    @Test(expected = ArithmeticException.class)
+    public void scenarioToTestTwoReallyLargeInts(){
+        int actual = calculator.add(Integer.MAX_VALUE,1);
     }
 
 }

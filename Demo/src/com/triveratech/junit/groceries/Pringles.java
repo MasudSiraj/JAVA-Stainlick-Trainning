@@ -1,29 +1,30 @@
 package com.triveratech.junit.groceries;
 
-public class DishSoap implements Grocery {
-    private int quantity;
+import java.util.Objects;
 
+public class Pringles implements Grocery {
 
     public void setQuantity(int qty) {
-        this.quantity = qty;
+
     }
 
     @Override
     public int getQuantity() {
-        return quantity;
+        return 0;
     }
 
     @Override
     public boolean isTaxable() {
-        return true;
+        return false;
     }
 
     @Override
     public int getPrice() {
-        return getQuantity()*100;
-
-
+        return 0;
     }
 
+    public void setVendor(Vendor vendor){
+        Objects.requireNonNull(vendor);
 
+    }
 }
